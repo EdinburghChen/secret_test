@@ -12,5 +12,6 @@ import os
 st.write(
     "Has environment variables been set:",
     os.environ["db_username"] == st.secrets["db_username"],
+    os.environ["db_userid"] == st.secrets["db_userid"],
 )
-st.write( os.environ["db_username"])
+st.write( os.environ["db_username"] + "：" + os.environ["db_userid"] )
